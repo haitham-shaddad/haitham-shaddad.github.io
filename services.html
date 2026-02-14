@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AIM Cloud Consulting Services - Custom software development, IT consulting, outsourcing, and technical support. Expert solutions in .NET, Azure, React, and more.">
+    <meta name="keywords" content="software development services, IT consulting, outsourcing, staff augmentation, technical support, custom applications">
+    <title>Our Services - AIM Cloud Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="services.html" class="text-blue-600 font-medium">Services</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-blue-600 font-semibold">Services</a>
+                <a href="technologies.html" class="block py-2 text-gray-600 hover:text-blue-600">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-gray-600 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    Our <span class="text-blue-400">Services</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Comprehensive technology solutions designed to accelerate your digital transformation
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Software Development -->
+    <section id="development" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-code text-4xl text-white"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Custom Software Development</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We build scalable, secure, and high-performance software solutions tailored to your business needs.
+                        From concept to deployment, our expert team delivers enterprise-grade applications using industry best practices
+                        and modern architectures.
+                    </p>
+                    <a href="contact.html" class="btn-primary">
+                        Start Your Project <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-globe text-blue-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Web Applications</h3>
+                        <p class="text-gray-600 text-sm">
+                            Responsive, modern web applications built with React, Angular, or Vue.js. Backend powered by .NET Core and ASP.NET.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-mobile-alt text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Mobile Apps</h3>
+                        <p class="text-gray-600 text-sm">
+                            Cross-platform and native mobile applications for iOS and Android with seamless backend integration.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-desktop text-green-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Desktop Applications</h3>
+                        <p class="text-gray-600 text-sm">
+                            Powerful desktop applications built with WPF, WinForms, or Electron for Windows, Mac, and Linux platforms.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-cloud text-orange-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Cloud Solutions</h3>
+                        <p class="text-gray-600 text-sm">
+                            Cloud-native applications leveraging Azure services, serverless architectures, and containerized deployments.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-plug text-red-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">API Development</h3>
+                        <p class="text-gray-600 text-sm">
+                            RESTful and GraphQL APIs with comprehensive documentation, security, and scalability built in.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                            <i class="fas fa-project-diagram text-indigo-600 text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Microservices</h3>
+                        <p class="text-gray-600 text-sm">
+                            Scalable microservices architectures with Docker, Kubernetes, and modern DevOps practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IT Consulting -->
+    <section id="consulting" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="order-2 lg:order-1">
+                    <div class="grid grid-cols-1 gap-6">
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-chart-line text-purple-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-2 text-gray-900">Technology Strategy</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Strategic technology roadmaps aligned with business goals. We help you make informed decisions about
+                                        technology investments and modernization initiatives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-sync-alt text-blue-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-2 text-gray-900">Digital Transformation</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        End-to-end digital transformation consulting to modernize your business processes, systems, and
+                                        customer experiences with cutting-edge technology.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-sitemap text-green-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-2 text-gray-900">Architecture Design</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Enterprise architecture design and review services. We design scalable, maintainable solutions that
+                                        support your long-term business objectives.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-search text-orange-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-2 text-gray-900">Technical Audits</h3>
+                                    <p class="text-gray-600 text-sm">
+                                        Comprehensive code reviews, security audits, and performance assessments to identify issues and
+                                        optimization opportunities in existing systems.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="order-1 lg:order-2">
+                    <div class="w-20 h-20 bg-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-lightbulb text-4xl text-white"></i>
+                    </div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">IT Consulting & Advisory</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Strategic IT consulting to help you make informed technology decisions. Our experienced consultants analyze your
+                        current state, identify opportunities, and recommend solutions that drive business value and competitive advantage.
+                    </p>
+                    <a href="contact.html" class="btn-primary">
+                        Schedule Consultation <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outsourcing Services -->
+    <section id="outsourcing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="w-20 h-20 bg-green-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <i class="fa-solid fa-users text-4xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Outsourcing & Staff Augmentation</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Extend your team with our skilled professionals. We provide flexible outsourcing solutions to help you scale
+                    quickly and efficiently while maintaining quality and reducing costs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+                <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-user-friends text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Dedicated Teams</h3>
+                    <p class="text-gray-600 mb-6">
+                        Full development teams dedicated exclusively to your project. Work directly with experienced developers,
+                        designers, and QA engineers who become an extension of your in-house team.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Hand-picked team members</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Full-time commitment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Direct communication</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Flexible scaling</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-user-plus text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Staff Augmentation</h3>
+                    <p class="text-gray-600 mb-6">
+                        Quickly fill skill gaps with our experienced professionals. Add specialized expertise to your existing team
+                        for short-term or long-term engagements.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Specialized expertise</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Rapid onboarding</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Flexible duration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Cost-effective scaling</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-cogs text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-900">Managed Services</h3>
+                    <p class="text-gray-600 mb-6">
+                        Let us manage your entire IT infrastructure and applications. Focus on your core business while we handle
+                        all technical operations, maintenance, and support.
+                    </p>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Proactive monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">24/7 support coverage</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Predictable costs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Reduced overhead</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support & Maintenance -->
+    <section id="support" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <div class="w-20 h-20 bg-orange-600 rounded-xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <i class="fa-solid fa-headset text-4xl text-white"></i>
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Technical Support & Maintenance</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Comprehensive support and maintenance services to keep your systems running smoothly, securely, and efficiently.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-clock text-orange-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">24/7 Support</h3>
+                    <p class="text-gray-600 text-sm">
+                        Round-the-clock technical support for mission-critical applications with rapid response times.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-bug text-blue-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Bug Fixes</h3>
+                    <p class="text-gray-600 text-sm">
+                        Quick identification and resolution of bugs and issues to minimize downtime and maintain productivity.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Security Updates</h3>
+                    <p class="text-gray-600 text-sm">
+                        Regular security patches and updates to protect against vulnerabilities and emerging threats.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tachometer-alt text-purple-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Performance</h3>
+                    <p class="text-gray-600 text-sm">
+                        Continuous monitoring and optimization to ensure peak performance and user satisfaction.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-database text-red-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Backups</h3>
+                    <p class="text-gray-600 text-sm">
+                        Automated backup solutions with reliable recovery processes to protect your critical data.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-sync text-indigo-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Updates</h3>
+                    <p class="text-gray-600 text-sm">
+                        Regular feature updates and enhancements to keep your applications modern and competitive.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-bar text-pink-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Monitoring</h3>
+                    <p class="text-gray-600 text-sm">
+                        Proactive system monitoring with alerts to identify and resolve issues before they impact users.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-file-alt text-yellow-600 text-xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2 text-gray-900">Documentation</h3>
+                    <p class="text-gray-600 text-sm">
+                        Comprehensive documentation updates and knowledge transfer for your internal teams.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Methodology -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Development Process</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Agile methodology for predictable results and continuous value delivery
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Discovery</h3>
+                    <p class="text-gray-600">
+                        We analyze your requirements, goals, and constraints to create a comprehensive project roadmap.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Design</h3>
+                    <p class="text-gray-600">
+                        Our architects design scalable solutions with user-centric interfaces and robust technical foundations.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Development</h3>
+                    <p class="text-gray-600">
+                        Iterative development with regular demos and feedback cycles to ensure alignment with your vision.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Deployment</h3>
+                    <p class="text-gray-600">
+                        Seamless deployment with comprehensive testing, documentation, and ongoing support.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how we can help you achieve your technology goals
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Get in Touch
+                </a>
+                <a href="portfolio.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

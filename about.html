@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About AIM Cloud Consulting - Learn about our mission, vision, values, and team. 10+ years of excellence in software development and IT consulting.">
+    <meta name="keywords" content="about us, company history, mission, vision, IT consulting company, software development team">
+    <title>About Us - AIM Cloud Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-blue-600 font-medium">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-blue-600 font-semibold">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="technologies.html" class="block py-2 text-gray-600 hover:text-blue-600">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-gray-600 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    About <span class="text-blue-400">AIM Cloud Consulting</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Empowering businesses through innovative technology solutions and strategic consulting
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-3xl text-white"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Our Mission</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        To deliver world-class software solutions that drive business transformation and create lasting value for our clients.
+                        We are committed to excellence, innovation, and building long-term partnerships based on trust and mutual success.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-purple-50 to-white rounded-2xl border border-gray-100 shadow-sm">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-3xl text-white"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4 text-gray-900">Our Vision</h2>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        To be the most trusted technology partner for businesses seeking to leverage cutting-edge solutions for competitive advantage.
+                        We envision a future where technology seamlessly integrates with business strategy to unlock unprecedented growth.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Values</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    The principles that guide everything we do
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Excellence</h3>
+                    <p class="text-gray-600">
+                        We pursue excellence in every project, delivering quality that exceeds expectations through meticulous attention to detail and best practices.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Innovation</h3>
+                    <p class="text-gray-600">
+                        We embrace new technologies and methodologies, constantly evolving to provide cutting-edge solutions that drive competitive advantage.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-handshake text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Integrity</h3>
+                    <p class="text-gray-600">
+                        We conduct business with honesty and transparency, building trust through ethical practices and commitment to our promises.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Collaboration</h3>
+                    <p class="text-gray-600">
+                        We believe in the power of teamwork, working closely with clients and partners to achieve shared goals and mutual success.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Agility</h3>
+                    <p class="text-gray-600">
+                        We adapt quickly to changing requirements and market conditions, delivering solutions with speed and flexibility.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Client Success</h3>
+                    <p class="text-gray-600">
+                        Your success is our success. We measure our achievements by the value and results we deliver to our clients.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Meet Our Leadership</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Experienced leaders driving innovation and excellence
+                </p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl shadow-lg text-center">
+                    <div class="w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-user-tie text-5xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 text-gray-900">Haitham Shaddad</h3>
+                    <p class="text-blue-600 font-semibold mb-4">CEO & Founder</p>
+                    <p class="text-gray-600 leading-relaxed mb-6">
+                        With over 10 years of experience in software development and IT consulting, Haitham founded AIM Cloud Consulting
+                        with a vision to deliver world-class technology solutions. His expertise spans Microsoft technologies, cloud architecture,
+                        and enterprise software development. Under his leadership, AIM Cloud Consulting has grown to become a trusted partner
+                        for businesses seeking digital transformation.
+                    </p>
+                    <div class="flex justify-center gap-4">
+                        <div class="flex items-center text-gray-600">
+                            <i class="fas fa-envelope mr-2 text-blue-600"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-blue-600">
+                                haitham.shaddad@aimcloudconsulting.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company History -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Journey</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    A decade of growth, innovation, and success
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2014 - Foundation</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">The Beginning</h3>
+                        <p class="text-gray-600">
+                            AIM Cloud Consulting was founded with a mission to provide high-quality software development and IT consulting services
+                            to businesses of all sizes.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2016 - Expansion</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Growing the Team</h3>
+                        <p class="text-gray-600">
+                            Expanded our team to include specialists in cloud technologies, modern frontend frameworks, and enterprise architecture.
+                            Completed first major enterprise project.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2018 - Cloud Excellence</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Azure Partnership</h3>
+                        <p class="text-gray-600">
+                            Became a Microsoft Azure partner, delivering numerous cloud migration and cloud-native projects. Established expertise
+                            in Azure DevOps and containerized applications.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2020 - Digital Transformation</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Pandemic Response</h3>
+                        <p class="text-gray-600">
+                            Helped dozens of businesses rapidly transition to remote operations and digital-first strategies. Delivered critical
+                            solutions for remote collaboration and e-commerce.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2022 - Innovation Hub</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Expanding Capabilities</h3>
+                        <p class="text-gray-600">
+                            Launched new service lines in AI/ML integration, microservices architecture, and DevOps automation. Reached 100+
+                            successful project completions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-blue-600 font-bold text-lg mb-2">2024 - Present Day</div>
+                        <h3 class="text-xl font-bold mb-2 text-gray-900">Leading the Future</h3>
+                        <p class="text-gray-600">
+                            Continuing to innovate with cutting-edge technologies including cloud-native development, serverless architectures,
+                            and advanced Microsoft 365 integrations. Serving 50+ happy clients worldwide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose AIM Cloud Consulting</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-certificate text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Proven Expertise</h3>
+                    <p class="text-gray-600">
+                        10+ years of experience delivering enterprise-grade solutions across diverse industries with a track record of success.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-purple-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-tachometer-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Agile Delivery</h3>
+                    <p class="text-gray-600">
+                        Fast, iterative development approach that delivers value quickly and adapts to changing business needs.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-green-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Security First</h3>
+                    <p class="text-gray-600">
+                        Enterprise-grade security built into every solution, ensuring data protection and compliance with industry standards.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dollar-sign text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Cost-Effective</h3>
+                    <p class="text-gray-600">
+                        Competitive pricing models including fixed-price projects, time & materials, and dedicated team options.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-red-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">24/7 Support</h3>
+                    <p class="text-gray-600">
+                        Round-the-clock technical support and maintenance services to keep your systems running smoothly.
+                    </p>
+                </div>
+
+                <div class="p-8 bg-gradient-to-br from-indigo-50 to-white rounded-xl shadow-sm card-hover">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Global Reach</h3>
+                    <p class="text-gray-600">
+                        Serving clients worldwide with flexible engagement models and seamless remote collaboration capabilities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Work Together?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how we can help transform your business with innovative technology solutions
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Get in Touch
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

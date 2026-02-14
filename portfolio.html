@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio & Case Studies - AIM Cloud Consulting. View our successful projects for Port Waratah Coal Services including Services Portal and Mobile JSEA.">
+    <meta name="keywords" content="portfolio, case studies, projects, coal services, risk assessment, mobile applications, Azure migration">
+    <title>Portfolio - AIM Cloud Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-blue-600 font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="technologies.html" class="block py-2 text-gray-600 hover:text-blue-600">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-blue-600 font-semibold">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-gray-600 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    Our <span class="text-blue-400">Portfolio</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Real-world projects delivering tangible business value through innovative technology solutions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Overview -->
+    <section class="py-16 bg-white border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 md:p-12 border border-blue-100">
+                <div class="flex items-start mb-6">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mr-6 flex-shrink-0">
+                        <i class="fas fa-ship text-3xl text-white"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 mb-3">Port Waratah Coal Services</h2>
+                        <p class="text-lg text-gray-600 mb-4">
+                            Major player in the global coal export market, operating two coal export terminals in Newcastle, Australia
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">145M</div>
+                        <div class="text-gray-600">Tonnes Annual Capacity</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">2</div>
+                        <div class="text-gray-600">Coal Export Terminals</div>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm">
+                        <div class="text-3xl font-bold text-blue-600 mb-2">4+</div>
+                        <div class="text-gray-600">Years Partnership</div>
+                    </div>
+                </div>
+
+                <p class="text-gray-700 leading-relaxed">
+                    Port Waratah Coal Services (PWCS) is a key link in the Hunter Valley Coal Chain, handling the export of coal
+                    from the Hunter Valley region, one of the world's largest coal-producing areas. PWCS operates Carrington Coal
+                    Terminal and Kooragang Coal Terminal, providing comprehensive services including coal receival, blending,
+                    stockpiling, and shiploading.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Model -->
+    <section class="py-12 bg-gray-50 border-b">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900">Our Service Model</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-code text-blue-600 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Greenfield Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Building innovative solutions from the ground up using modern technologies and best practices
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-tools text-purple-600 text-2xl mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-900">Support & Maintenance</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Ongoing support, bug resolution, enhancements, and strategic initiatives for existing systems
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 1: Services Portal -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-8 md:p-12 text-white">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-semibold">Enterprise Platform</span>
+                        <i class="fas fa-server text-4xl"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Services Portal</h3>
+                    <p class="text-blue-100 text-lg">Foundational platform for PWCS coal export operations</p>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <!-- Overview -->
+                    <div class="mb-10">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">Project Overview</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            The Services Portal serves as the foundational platform for PWCS operations, facilitating the management
+                            of customers, contracts, coal brands, and designated loading points for each brand. Services Assurance
+                            Officers and the Shipment Contracts team leverage the portal to manage diverse vessels and their respective
+                            trips, as well as to orchestrate the coal loading plan for each vessel trip.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                        <!-- Challenge -->
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-exclamation-triangle text-orange-600 text-2xl mr-3"></i>
+                                <h4 class="text-xl font-bold text-gray-900">Challenge</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Legacy system developed over 10 years ago requiring modernization</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Complex vessel trip management and coal loading orchestration</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Need for cloud migration and single sign-on implementation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Continuous system maintenance while delivering enhancements</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Solution -->
+                        <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-lightbulb text-green-600 text-2xl mr-3"></i>
+                                <h4 class="text-xl font-bold text-gray-900">Solution</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Ongoing support and maintenance since 2021</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Successful migration to Microsoft Azure cloud platform</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Implementation of Single Sign-On (SSO) for enhanced security</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Strategic enhancements optimizing efficiency for employees and customers</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Bug resolution and system stability improvements</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="mb-10">
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Key Features</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                                <i class="fas fa-users text-blue-600 text-2xl mb-2"></i>
+                                <h5 class="font-semibold text-gray-900 mb-1">Customer Management</h5>
+                                <p class="text-sm text-gray-600">Comprehensive customer and contract administration</p>
+                            </div>
+                            <div class="bg-purple-50 p-4 rounded-lg border border-purple-100">
+                                <i class="fas fa-fire text-purple-600 text-2xl mb-2"></i>
+                                <h5 class="font-semibold text-gray-900 mb-1">Coal Brand Management</h5>
+                                <p class="text-sm text-gray-600">Tracking and management of coal brands and loading points</p>
+                            </div>
+                            <div class="bg-green-50 p-4 rounded-lg border border-green-100">
+                                <i class="fas fa-ship text-green-600 text-2xl mb-2"></i>
+                                <h5 class="font-semibold text-gray-900 mb-1">Vessel Trip Management</h5>
+                                <p class="text-sm text-gray-600">Orchestration of vessel trips and loading schedules</p>
+                            </div>
+                            <div class="bg-orange-50 p-4 rounded-lg border border-orange-100">
+                                <i class="fas fa-chart-line text-orange-600 text-2xl mb-2"></i>
+                                <h5 class="font-semibold text-gray-900 mb-1">Loading Plan Optimization</h5>
+                                <p class="text-sm text-gray-600">Strategic coal loading plan management</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl border border-blue-100 mb-10">
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Results & Impact</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Enhanced Security</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">SSO implementation providing secure, streamlined access</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Cloud Scalability</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Azure migration enabling better performance and reliability</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-blue-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Operational Efficiency</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Optimized workflows for staff and customers</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">ASP.NET Framework</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">ASP.NET Core</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">Entity Framework</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">SQL Server</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">Microsoft Azure</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">Azure DevOps</span>
+                            <span class="px-4 py-2 bg-blue-100 text-blue-700 font-semibold rounded-full">Angular</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project 2: Mobile JSEA -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
+                <div class="bg-gradient-to-r from-purple-600 to-purple-800 p-8 md:p-12 text-white">
+                    <div class="flex items-center justify-between mb-6">
+                        <span class="px-4 py-2 bg-white bg-opacity-20 rounded-full text-sm font-semibold">Mobile Innovation</span>
+                        <i class="fas fa-mobile-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Mobile JSEA & Take5</h3>
+                    <p class="text-purple-100 text-lg">AI-powered mobile risk assessment application</p>
+                </div>
+
+                <div class="p-8 md:p-12">
+                    <!-- Overview -->
+                    <div class="mb-10">
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">Project Overview</h4>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-4">
+                            AIM developed a mobile-first web application to enable PWCS employees and contractors to create and sign
+                            both JSEA (Job Safety and Environment Analysis) and Take5 risk assessments. The app leverages cutting-edge
+                            AI technology to provide a seamless user experience with handwriting recognition and speech-to-text functionality.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            PWCS utilizes two primary risk assessment methods: <strong>Take5</strong> - a simplified, quick assessment
+                            suitable for routine tasks with yes/no questions, and <strong>JSEA</strong> - a detailed, step-by-step
+                            analysis breaking down tasks into individual steps with hazard identification and controls.
+                        </p>
+                    </div>
+
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
+                        <!-- Challenge -->
+                        <div class="bg-gray-50 p-6 rounded-xl">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-exclamation-triangle text-orange-600 text-2xl mr-3"></i>
+                                <h4 class="text-xl font-bold text-gray-900">Challenge</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Paper-based risk assessment process causing delays and inefficiencies</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Need for mobile solution accessible in field conditions</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Support for both quick Take5 and detailed JSEA assessments</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-chevron-right text-orange-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Digital signature capture for compliance and audit trails</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Solution -->
+                        <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-lightbulb text-green-600 text-2xl mr-3"></i>
+                                <h4 class="text-xl font-bold text-gray-900">Solution</h4>
+                            </div>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Mobile-first responsive web application</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">AI-powered handwriting-to-text conversion</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Speech-to-text functionality for hands-free input</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Digital signature capture and validation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check text-green-600 mt-1 mr-2 flex-shrink-0"></i>
+                                    <span class="text-gray-700">Support for both JSEA and Take5 assessment types</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="mb-10">
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Innovative Features</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div class="bg-purple-50 p-5 rounded-lg border border-purple-100">
+                                <i class="fas fa-pen-fancy text-purple-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Handwriting Recognition</h5>
+                                <p class="text-sm text-gray-600">AI-powered conversion of handwritten input to text</p>
+                            </div>
+                            <div class="bg-blue-50 p-5 rounded-lg border border-blue-100">
+                                <i class="fas fa-microphone text-blue-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Voice Input</h5>
+                                <p class="text-sm text-gray-600">Speech-to-text for convenient hands-free operation</p>
+                            </div>
+                            <div class="bg-green-50 p-5 rounded-lg border border-green-100">
+                                <i class="fas fa-signature text-green-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Digital Signatures</h5>
+                                <p class="text-sm text-gray-600">Secure electronic signature capture and storage</p>
+                            </div>
+                            <div class="bg-orange-50 p-5 rounded-lg border border-orange-100">
+                                <i class="fas fa-mobile-alt text-orange-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Mobile-First Design</h5>
+                                <p class="text-sm text-gray-600">Optimized for field use on smartphones and tablets</p>
+                            </div>
+                            <div class="bg-red-50 p-5 rounded-lg border border-red-100">
+                                <i class="fas fa-clipboard-check text-red-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Dual Assessment Types</h5>
+                                <p class="text-sm text-gray-600">Support for both Take5 and JSEA methodologies</p>
+                            </div>
+                            <div class="bg-indigo-50 p-5 rounded-lg border border-indigo-100">
+                                <i class="fas fa-wifi text-indigo-600 text-2xl mb-3"></i>
+                                <h5 class="font-semibold text-gray-900 mb-2">Offline Capability</h5>
+                                <p class="text-sm text-gray-600">Works in remote locations with limited connectivity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-xl border border-purple-100 mb-10">
+                        <h4 class="text-xl font-bold text-gray-900 mb-6">Results & Impact</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-purple-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Improved Safety</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Faster, more accurate risk assessments in the field</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-purple-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Time Savings</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Reduced assessment completion time with AI assistance</p>
+                            </div>
+                            <div>
+                                <div class="flex items-center mb-2">
+                                    <i class="fas fa-check-circle text-purple-600 text-xl mr-2"></i>
+                                    <span class="font-semibold text-gray-900">Digital Records</span>
+                                </div>
+                                <p class="text-gray-600 text-sm">Complete digital audit trail for compliance</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Future Development -->
+                    <div class="bg-gradient-to-r from-green-600 to-green-700 p-6 rounded-xl text-white mb-10">
+                        <div class="flex items-start">
+                            <i class="fas fa-rocket text-3xl mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="text-xl font-bold mb-2">Currently in Development: Module 3</h4>
+                                <p class="text-green-100">
+                                    AIM is now developing the third module to introduce <strong>digital work permits</strong>,
+                                    further enhancing PWCS's digital transformation and safety management capabilities.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technologies -->
+                    <div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-4">Technologies Used</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">ASP.NET Core</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">React</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">AI/ML Services</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">Azure</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">SQL Server</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">MongoDB</span>
+                            <span class="px-4 py-2 bg-purple-100 text-purple-700 font-semibold rounded-full">Azure DevOps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Technology Stack</h2>
+                <div class="section-divider"></div>
+                <p class="text-gray-600 mt-4">Comprehensive expertise across the Microsoft ecosystem and modern frameworks</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Backend -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-server text-blue-600 mr-3"></i>
+                        Backend Technologies
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            <span>ASP.NET Framework & Core</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            <span>Entity Framework</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-blue-600 mr-2"></i>
+                            <span>Workflow Foundation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-green-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-database text-green-600 mr-3"></i>
+                        Databases
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-600 mr-2"></i>
+                            <span>SQL Server</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-600 mr-2"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-600 mr-2"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-purple-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-desktop text-purple-600 mr-3"></i>
+                        Frontend Technologies
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-purple-600 mr-2"></i>
+                            <span>Angular</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-purple-600 mr-2"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-purple-600 mr-2"></i>
+                            <span>TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-orange-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-cloud text-orange-600 mr-3"></i>
+                        Cloud & DevOps
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-orange-600 mr-2"></i>
+                            <span>Microsoft Azure</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-orange-600 mr-2"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-orange-600 mr-2"></i>
+                            <span>Azure DevOps</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-orange-600 mr-2"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Microsoft 365 -->
+                <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl border border-red-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fab fa-microsoft text-red-600 mr-3"></i>
+                        Microsoft 365
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-red-600 mr-2"></i>
+                            <span>SharePoint</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-red-600 mr-2"></i>
+                            <span>Power Automate</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-red-600 mr-2"></i>
+                            <span>Power Platform</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Integration -->
+                <div class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl border border-indigo-100">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-plug text-indigo-600 mr-3"></i>
+                        Integration & APIs
+                    </h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-indigo-600 mr-2"></i>
+                            <span>RESTful APIs</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-indigo-600 mr-2"></i>
+                            <span>Microservices</span>
+                        </div>
+                        <div class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-indigo-600 mr-2"></i>
+                            <span>Third-party Integrations</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Operations?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how we can deliver innovative solutions tailored to your business needs
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Get in Touch
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

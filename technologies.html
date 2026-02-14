@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technologies - AIM Cloud Consulting specializes in .NET, C#, Azure, React, Angular, SQL Server, and more. Explore our technology stack.">
+    <meta name="keywords" content=".NET, C#, ASP.NET Core, Azure, React, Angular, Vue.js, SQL Server, Entity Framework, Docker, Kubernetes">
+    <title>Technologies - AIM Cloud Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="technologies.html" class="text-blue-600 font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="technologies.html" class="block py-2 text-blue-600 font-semibold">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-gray-600 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    Our <span class="text-blue-400">Technology Stack</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    We work with industry-leading technologies to deliver cutting-edge solutions
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backend Technologies -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Backend Technologies</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Robust server-side technologies for enterprise applications
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-microsoft text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">.NET & C#</h3>
+                    <p class="text-gray-600 mb-4">
+                        Microsoft .NET platform including C#, ASP.NET Core, and .NET 6/7/8 for building high-performance applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">ASP.NET Core</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">.NET 8</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">C# 12</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-layer-group text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Entity Framework</h3>
+                    <p class="text-gray-600 mb-4">
+                        Modern ORM for .NET, supporting both code-first and database-first approaches with LINQ queries.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">EF Core</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">LINQ</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Migrations</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-node-js text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Node.js</h3>
+                    <p class="text-gray-600 mb-4">
+                        JavaScript runtime for building scalable server-side applications with Express, NestJS, and other frameworks.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Express</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">NestJS</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">TypeScript</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Web API</h3>
+                    <p class="text-gray-600 mb-4">
+                        RESTful APIs, GraphQL, and microservices architectures with proper authentication and documentation.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">REST</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">GraphQL</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">Swagger</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-project-diagram text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Microservices</h3>
+                    <p class="text-gray-600 mb-4">
+                        Distributed architectures with service mesh, API gateways, and event-driven patterns.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Docker</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Kubernetes</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">RabbitMQ</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">SignalR</h3>
+                    <p class="text-gray-600 mb-4">
+                        Real-time communication library for adding real-time web functionality to applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">WebSockets</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Real-time</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Hub</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Frontend Technologies -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Frontend Technologies</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Modern UI frameworks for exceptional user experiences
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-cyan-500 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-react text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">React</h3>
+                    <p class="text-gray-600 mb-4">
+                        Component-based JavaScript library for building interactive user interfaces with React 18, Hooks, and Context API.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm rounded-full">React 18</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm rounded-full">Redux</span>
+                        <span class="px-3 py-1 bg-cyan-100 text-cyan-700 text-sm rounded-full">Next.js</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-angular text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Angular</h3>
+                    <p class="text-gray-600 mb-4">
+                        Full-featured TypeScript framework for building scalable enterprise applications with Angular 17+.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">Angular 17</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">RxJS</span>
+                        <span class="px-3 py-1 bg-red-100 text-red-700 text-sm rounded-full">NgRx</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-vuejs text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Vue.js</h3>
+                    <p class="text-gray-600 mb-4">
+                        Progressive JavaScript framework for building modern web interfaces with Vue 3 Composition API.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Vue 3</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Vuex</span>
+                        <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Nuxt.js</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-js text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">TypeScript</h3>
+                    <p class="text-gray-600 mb-4">
+                        Strongly-typed superset of JavaScript for building maintainable and scalable applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">TypeScript 5</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Type Safety</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Decorators</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">CSS Frameworks</h3>
+                    <p class="text-gray-600 mb-4">
+                        Modern CSS frameworks and preprocessors for responsive and beautiful user interfaces.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Tailwind</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Bootstrap</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">SASS</span>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Mobile Frameworks</h3>
+                    <p class="text-gray-600 mb-4">
+                        Cross-platform mobile development frameworks for iOS and Android applications.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">React Native</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">Xamarin</span>
+                        <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">MAUI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cloud & DevOps -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Cloud & DevOps</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Cloud platforms and automation tools for modern deployment
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-cloud text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Microsoft Azure</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Azure App Services, Functions, Storage, and all major Azure services.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">App Services</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Functions</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fab fa-microsoft text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Azure DevOps</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Complete CI/CD pipelines with Azure Repos, Pipelines, and Boards.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Pipelines</span>
+                        <span class="px-2 py-1 bg-purple-100 text-purple-700 text-xs rounded">Repos</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-400 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fab fa-docker text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Docker</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Containerization for consistent environments across development and production.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Containers</span>
+                        <span class="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded">Compose</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-dharmachakra text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Kubernetes</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Container orchestration for deploying and managing microservices at scale.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded">AKS</span>
+                        <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-xs rounded">Helm</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fab fa-git-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Git & GitHub</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Version control with Git, GitHub, and Azure Repos for collaborative development.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded">GitHub</span>
+                        <span class="px-2 py-1 bg-orange-100 text-orange-700 text-xs rounded">Actions</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-infinity text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">CI/CD</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Automated build, test, and deployment pipelines for rapid delivery.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">Jenkins</span>
+                        <span class="px-2 py-1 bg-green-100 text-green-700 text-xs rounded">GitLab CI</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Monitoring</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Application Insights, Log Analytics, and monitoring solutions for observability.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">App Insights</span>
+                        <span class="px-2 py-1 bg-red-100 text-red-700 text-xs rounded">Grafana</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-white p-6 rounded-xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-yellow-600 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-code-branch text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">IaC</h3>
+                    <p class="text-gray-600 text-sm mb-3">
+                        Infrastructure as Code with Terraform, ARM templates, and Bicep.
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded">Terraform</span>
+                        <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded">Bicep</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Databases -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Databases & Storage</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Reliable data storage solutions for every use case
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-database text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">SQL Server</h3>
+                    <p class="text-gray-600 text-sm">
+                        Microsoft SQL Server for enterprise-grade relational database management.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-elephant text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">PostgreSQL</h3>
+                    <p class="text-gray-600 text-sm">
+                        Advanced open-source relational database with powerful features.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">MongoDB</h3>
+                    <p class="text-gray-600 text-sm">
+                        NoSQL document database for flexible, scalable data storage.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-globe text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Cosmos DB</h3>
+                    <p class="text-gray-600 text-sm">
+                        Globally distributed, multi-model database service from Azure.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-memory text-red-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Redis</h3>
+                    <p class="text-gray-600 text-sm">
+                        In-memory data structure store for caching and real-time analytics.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-table text-indigo-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Azure SQL</h3>
+                    <p class="text-gray-600 text-sm">
+                        Cloud-based SQL database with automatic scaling and high availability.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-box text-yellow-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Blob Storage</h3>
+                    <p class="text-gray-600 text-sm">
+                        Azure Blob Storage for scalable object storage in the cloud.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-fire text-pink-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-900">Firebase</h3>
+                    <p class="text-gray-600 text-sm">
+                        Real-time database and backend services for mobile and web apps.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Microsoft 365 -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Microsoft 365 & Productivity</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Enterprise collaboration and productivity solutions
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-microsoft text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">SharePoint</h3>
+                    <p class="text-gray-600 mb-4">
+                        SharePoint Online and on-premises solutions for document management, collaboration, and intranet portals.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">SPFx</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Site Design</span>
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">PnP</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Power Platform</h3>
+                    <p class="text-gray-600 mb-4">
+                        Power Apps, Power Automate, and Power BI for low-code business solutions and data visualization.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Power Apps</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Power BI</span>
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Automate</span>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition card-hover">
+                    <div class="w-20 h-20 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fab fa-microsoft text-4xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Microsoft Teams</h3>
+                    <p class="text-gray-600 mb-4">
+                        Custom Teams apps, bots, and integrations for enhanced collaboration and workflow automation.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Teams Apps</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Bots</span>
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">Graph API</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Need Expertise in These Technologies?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how our technical expertise can help your project succeed
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Start a Conversation
+                </a>
+                <a href="services.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    View Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -3,144 +3,358 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AIM Cloud Consulting provides expert software development, maintenance, and support specializing in Microsoft technologies and modern frontends.">
-    <title>AIM Cloud Consulting</title>
+    <meta name="description" content="AIM Cloud Consulting - Expert software development, consulting, and outsourcing services. We specialize in Microsoft technologies, cloud solutions, and modern frontend development.">
+    <meta name="keywords" content="software development, consulting, outsourcing, Microsoft Azure, .NET, SharePoint, React, Angular">
+    <title>AIM Cloud Consulting - Software Development & IT Consulting Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* Custom styles for smooth scrolling and hero background */
-        body { font-family: 'Inter', sans-serif; }
-        .hero-pattern {
-            background-color: #0f172a;
-            background-image: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
+    <!-- Navigation -->
     <nav class="bg-white shadow-md fixed w-full z-50 top-0">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="font-bold text-2xl text-blue-600">AIM Cloud<span class="text-gray-800">Consulting</span></span>
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
                 </div>
+
+                <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-600 hover:text-blue-600 transition">Home</a>
-                    <a href="#services" class="text-gray-600 hover:text-blue-600 transition">Services</a>
-                    <a href="#technologies" class="text-gray-600 hover:text-blue-600 transition">Technologies</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
                 </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="technologies.html" class="block py-2 text-gray-600 hover:text-blue-600">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-gray-600 hover:text-blue-600">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="hero-pattern text-white pt-32 pb-20 md:pt-40 md:pb-28">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
-                Empowering Your Business with <br class="hidden md:block" />
-                <span class="text-blue-400">Enterprise Software Solutions</span>
-            </h1>
-            <p class="mt-4 text-xl text-gray-300 max-w-2xl mx-auto mb-10">
-                We specialize in delivering high-performance consulting, development, and support using cutting-edge Microsoft and modern frontend technologies.
-            </p>
-            <a href="#contact" class="inline-block bg-blue-600 text-white font-semibold px-8 py-4 rounded-lg hover:bg-blue-500 transition shadow-lg">
-                Let's Build Together
-            </a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-pattern text-white pt-32 pb-20 md:pt-40 md:pb-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                    Transform Your Business with<br class="hidden md:block" />
+                    <span class="text-blue-400">World-Class Software Solutions</span>
+                </h1>
+                <p class="mt-6 text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10">
+                    Leading provider of software development, IT consulting, and outsourcing services.
+                    We deliver enterprise-grade solutions powered by Microsoft technologies and cutting-edge frameworks.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="contact.html" class="btn-primary">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="services.html" class="btn-secondary">
+                        Our Services
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">10+</div>
+                    <div class="text-gray-300 text-sm md:text-base">Years Experience</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">100+</div>
+                    <div class="text-gray-300 text-sm md:text-base">Projects Delivered</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">50+</div>
+                    <div class="text-gray-300 text-sm md:text-base">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">24/7</div>
+                    <div class="text-gray-300 text-sm md:text-base">Support Available</div>
+                </div>
+            </div>
         </div>
     </section>
 
+    <!-- Services Overview -->
     <section id="services" class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-gray-900">Our Services</h2>
-                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4"></div>
-                <p class="mt-4 text-gray-600">Comprehensive software solutions tailored to your operational needs.</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Core Services</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    Comprehensive software solutions designed to accelerate your digital transformation
+                </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-code text-2xl text-blue-600"></i>
+                <!-- Software Development -->
+                <div class="p-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-code text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">Software Development</h3>
-                    <p class="text-gray-600">End-to-end custom software development. We build scalable, secure, and robust applications from architecture design to final deployment.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Software Development</h3>
+                    <p class="text-gray-600 mb-6">
+                        Custom software development from concept to deployment. We build scalable, secure enterprise applications
+                        using industry best practices and modern architectures.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Custom Application Development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">API Development & Integration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Cloud-Native Solutions</span>
+                        </li>
+                    </ul>
+                    <a href="services.html#development" class="text-blue-600 font-semibold hover:text-blue-700 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-screwdriver-wrench text-2xl text-blue-600"></i>
+
+                <!-- IT Consulting -->
+                <div class="p-8 bg-gradient-to-br from-purple-50 to-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-lightbulb text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">Software Maintenance</h3>
-                    <p class="text-gray-600">Keep your applications running smoothly. We provide updates, performance optimizations, bug fixes, and legacy system modernizations.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">IT Consulting</h3>
+                    <p class="text-gray-600 mb-6">
+                        Strategic IT consulting to help you make informed technology decisions. We analyze your needs
+                        and recommend solutions that drive business value.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Technology Strategy</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Digital Transformation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Architecture Design</span>
+                        </li>
+                    </ul>
+                    <a href="services.html#consulting" class="text-purple-600 font-semibold hover:text-purple-700 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
-                <div class="p-8 bg-gray-50 rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
-                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
-                        <i class="fa-solid fa-headset text-2xl text-blue-600"></i>
+
+                <!-- Outsourcing & Staff Augmentation -->
+                <div class="p-8 bg-gradient-to-br from-green-50 to-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 card-hover">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                        <i class="fa-solid fa-users text-3xl text-white"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-gray-900">Technical Support</h3>
-                    <p class="text-gray-600">Reliable technical support to minimize downtime. We offer troubleshooting, cloud management, and continuous assistance for your IT infrastructure.</p>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-900">Outsourcing Services</h3>
+                    <p class="text-gray-600 mb-6">
+                        Extend your team with our skilled professionals. We provide flexible outsourcing solutions
+                        to help you scale quickly and efficiently.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Dedicated Development Teams</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Staff Augmentation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                            <span class="text-gray-700">Managed Services</span>
+                        </li>
+                    </ul>
+                    <a href="services.html#outsourcing" class="text-green-600 font-semibold hover:text-green-700 inline-flex items-center">
+                        Learn More <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="technologies" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">Technologies We Master</h2>
-            <div class="w-16 h-1 bg-blue-600 mx-auto mt-2 mb-10"></div>
-            
-            <div class="flex flex-wrap justify-center gap-4">
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-brands fa-microsoft text-blue-500"></i> ASP.NET</span>
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-solid fa-cloud text-blue-400"></i> Microsoft Azure</span>
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-solid fa-share-nodes text-teal-500"></i> SharePoint</span>
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-brands fa-windows text-orange-500"></i> Office 365</span>
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-brands fa-angular text-red-600"></i> Angular</span>
-                <span class="px-6 py-3 bg-white border border-gray-200 rounded-full shadow-sm font-semibold text-gray-700 flex items-center gap-2"><i class="fa-brands fa-react text-blue-400"></i> React</span>
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose AIM Cloud Consulting</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-award text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Proven Expertise</h3>
+                    <p class="text-gray-600">10+ years of experience delivering enterprise solutions</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-rocket text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Agile Methodology</h3>
+                    <p class="text-gray-600">Fast delivery with iterative development approach</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Security First</h3>
+                    <p class="text-gray-600">Enterprise-grade security in every solution we build</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-20 h-20 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                    <p class="text-gray-600">Round-the-clock support for mission-critical systems</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900">Get In Touch</h2>
-            <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 mb-8"></div>
-            <p class="text-lg text-gray-600 mb-10">Ready to transform your ideas into reality? Reach out to us for a consultation or to discuss your next big project.</p>
-            
-            <div class="bg-gray-50 rounded-2xl p-10 shadow-lg border border-gray-100 inline-block text-left w-full max-w-md">
-                <div class="flex items-center mb-6">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <i class="fa-solid fa-user text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-500 uppercase tracking-wide">Contact Person</p>
-                        <p class="text-lg font-bold text-gray-900">Haitham Shaddad</p>
-                    </div>
-                </div>
-                
-                <div class="flex items-center mb-8">
-                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                        <i class="fa-solid fa-envelope text-blue-600 text-xl"></i>
-                    </div>
-                    <div>
-                        <p class="text-sm text-gray-500 uppercase tracking-wide">Email</p>
-                        <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="text-lg font-bold text-blue-600 hover:underline">
-                            haitham.shaddad@aimcloudconsulting.com
-                        </a>
-                    </div>
-                </div>
+    <!-- Technologies Preview -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Technologies We Master</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    We work with industry-leading technologies and frameworks
+                </p>
+            </div>
 
-                <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="block w-full text-center bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
-                    Send an Email
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fab fa-microsoft text-5xl text-blue-600 mb-3"></i>
+                    <span class="font-semibold text-gray-700">.NET / C#</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fas fa-cloud text-5xl text-blue-500 mb-3"></i>
+                    <span class="font-semibold text-gray-700">Azure Cloud</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fab fa-react text-5xl text-cyan-500 mb-3"></i>
+                    <span class="font-semibold text-gray-700">React</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fab fa-angular text-5xl text-red-600 mb-3"></i>
+                    <span class="font-semibold text-gray-700">Angular</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fas fa-database text-5xl text-orange-600 mb-3"></i>
+                    <span class="font-semibold text-gray-700">SQL Server</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-50 rounded-xl hover:bg-blue-50 transition">
+                    <i class="fab fa-node-js text-5xl text-green-600 mb-3"></i>
+                    <span class="font-semibold text-gray-700">Node.js</span>
+                </div>
+            </div>
+
+            <div class="text-center mt-10">
+                <a href="technologies.html" class="btn-primary">
+                    View All Technologies
                 </a>
             </div>
         </div>
     </section>
 
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <div class="max-w-7xl mx-auto px-4">
-            <p class="mb-2">&copy; <script>document.write(new Date().getFullYear())</script> AIM Cloud Consulting. All rights reserved.</p>
-            <p class="text-sm">Expert Software Consulting in Microsoft & Frontend Technologies.</p>
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how we can help transform your business with innovative software solutions
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Get in Touch
+                </a>
+                <a href="portfolio.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    View Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

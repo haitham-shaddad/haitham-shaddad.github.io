@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Careers at AIM Cloud Consulting - Join our team of talented developers and consultants. Explore open positions in .NET, React, Azure, and more.">
+    <meta name="keywords" content="careers, jobs, .NET developer, React developer, cloud architect, software engineer jobs">
+    <title>Careers - AIM Cloud Consulting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="index.html" class="font-bold text-2xl text-blue-600">
+                        AIM Cloud<span class="text-gray-800">Consulting</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Home</a>
+                    <a href="about.html" class="text-gray-600 hover:text-blue-600 transition font-medium">About</a>
+                    <a href="services.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Services</a>
+                    <a href="technologies.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Technologies</a>
+                    <a href="portfolio.html" class="text-gray-600 hover:text-blue-600 transition font-medium">Portfolio</a>
+                    <a href="careers.html" class="text-blue-600 font-medium">Careers</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition">Contact Us</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="hamburger" onclick="toggleMobileMenu()" class="text-gray-600 hover:text-blue-600 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t">
+            <div class="px-4 pt-2 pb-4 space-y-2">
+                <a href="index.html" class="block py-2 text-gray-600 hover:text-blue-600">Home</a>
+                <a href="about.html" class="block py-2 text-gray-600 hover:text-blue-600">About</a>
+                <a href="services.html" class="block py-2 text-gray-600 hover:text-blue-600">Services</a>
+                <a href="technologies.html" class="block py-2 text-gray-600 hover:text-blue-600">Technologies</a>
+                <a href="portfolio.html" class="block py-2 text-gray-600 hover:text-blue-600">Portfolio</a>
+                <a href="careers.html" class="block py-2 text-blue-600 font-semibold">Careers</a>
+                <a href="contact.html" class="block py-2 text-blue-600 font-semibold">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="hero-pattern text-white pt-32 pb-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-6">
+                    Join Our <span class="text-blue-400">Team</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Build your career with a team that values innovation, growth, and excellence
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Work With Us -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Why Work With Us</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Join a team that's passionate about technology and committed to your growth
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-rocket text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Cutting-Edge Projects</h3>
+                    <p class="text-gray-600">
+                        Work on innovative projects using the latest technologies including .NET 8, React 18, Azure cloud, and modern DevOps practices.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-purple-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Career Growth</h3>
+                    <p class="text-gray-600">
+                        Clear career progression paths, mentorship programs, and opportunities to lead projects and teams as you grow.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-green-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-graduation-cap text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Learning & Development</h3>
+                    <p class="text-gray-600">
+                        Continuous learning opportunities with training budgets, conference attendance, and access to online learning platforms.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-orange-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-orange-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Collaborative Culture</h3>
+                    <p class="text-gray-600">
+                        Work in a supportive environment that values teamwork, knowledge sharing, and open communication.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-red-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-house text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Work-Life Balance</h3>
+                    <p class="text-gray-600">
+                        Flexible work arrangements including remote work options, flexible hours, and generous time-off policies.
+                    </p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-white p-8 rounded-xl shadow-sm hover:shadow-lg transition">
+                    <div class="w-16 h-16 bg-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-globe text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Global Opportunities</h3>
+                    <p class="text-gray-600">
+                        Work with international clients and teams, with opportunities for travel and exposure to diverse projects.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & Perks -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Benefits & Perks</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-dollar-sign text-blue-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Competitive Compensation</h3>
+                        <p class="text-gray-600 text-sm">
+                            Competitive salaries with annual reviews and performance-based bonuses to reward your contributions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-heartbeat text-purple-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Health Insurance</h3>
+                        <p class="text-gray-600 text-sm">
+                            Comprehensive health insurance coverage for you and your family with premium plans.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-umbrella-beach text-green-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Paid Time Off</h3>
+                        <p class="text-gray-600 text-sm">
+                            Generous vacation days, sick leave, and paid holidays to maintain your work-life balance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-laptop text-orange-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Latest Equipment</h3>
+                        <p class="text-gray-600 text-sm">
+                            High-performance laptops, multiple monitors, and all the tools you need to be productive.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-certificate text-red-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Certifications</h3>
+                        <p class="text-gray-600 text-sm">
+                            Support for professional certifications including Microsoft, AWS, and other relevant credentials.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-sm flex items-start">
+                    <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                        <i class="fas fa-coffee text-indigo-600 text-xl"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-lg mb-2 text-gray-900">Team Events</h3>
+                        <p class="text-gray-600 text-sm">
+                            Regular team building activities, social events, and celebrations to foster camaraderie.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Openings -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Current Openings</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Join our team and make an impact
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Job 1 -->
+                <div class="bg-gradient-to-r from-blue-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Senior .NET Developer</h3>
+                            <div class="flex flex-wrap gap-3 text-sm text-gray-600">
+                                <span class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-blue-600"></i>
+                                    Remote / Hybrid
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-briefcase mr-2 text-blue-600"></i>
+                                    Full-time
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-clock mr-2 text-blue-600"></i>
+                                    5+ years experience
+                                </span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="mt-4 md:mt-0 btn-primary">
+                            Apply Now
+                        </a>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        We're seeking an experienced .NET developer to join our team and work on enterprise-scale applications.
+                        You'll be working with .NET Core, C#, Azure, and modern frontend frameworks.
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2">Key Requirements:</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">5+ years .NET/C# experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">ASP.NET Core, Web API</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Entity Framework Core</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">SQL Server, Azure SQL</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Azure cloud services</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Microservices architecture</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">.NET Core</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">C#</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Azure</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">SQL Server</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 2 -->
+                <div class="bg-gradient-to-r from-purple-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">React Developer</h3>
+                            <div class="flex flex-wrap gap-3 text-sm text-gray-600">
+                                <span class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-purple-600"></i>
+                                    Remote
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-briefcase mr-2 text-purple-600"></i>
+                                    Full-time
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-clock mr-2 text-purple-600"></i>
+                                    3+ years experience
+                                </span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="mt-4 md:mt-0 btn-primary">
+                            Apply Now
+                        </a>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Join our frontend team to build modern, responsive web applications using React and TypeScript.
+                        Work on exciting projects with cutting-edge technologies.
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2">Key Requirements:</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">3+ years React experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">TypeScript proficiency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Redux or state management</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">RESTful API integration</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Modern CSS frameworks</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Git version control</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">TypeScript</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Redux</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 3 -->
+                <div class="bg-gradient-to-r from-green-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Cloud Solutions Architect</h3>
+                            <div class="flex flex-wrap gap-3 text-sm text-gray-600">
+                                <span class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-green-600"></i>
+                                    Remote / Hybrid
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-briefcase mr-2 text-green-600"></i>
+                                    Full-time
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-clock mr-2 text-green-600"></i>
+                                    7+ years experience
+                                </span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="mt-4 md:mt-0 btn-primary">
+                            Apply Now
+                        </a>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Lead cloud architecture initiatives and design scalable, secure solutions on Microsoft Azure.
+                        Guide teams in cloud migration and modernization projects.
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2">Key Requirements:</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">7+ years cloud experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Azure certifications preferred</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Infrastructure as Code (Terraform)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Kubernetes and containers</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Cloud security best practices</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">DevOps and CI/CD pipelines</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Azure</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Kubernetes</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Terraform</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">DevOps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job 4 -->
+                <div class="bg-gradient-to-r from-orange-50 to-white p-8 rounded-2xl border border-gray-100 shadow-sm hover:shadow-lg transition">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Full Stack Developer</h3>
+                            <div class="flex flex-wrap gap-3 text-sm text-gray-600">
+                                <span class="flex items-center">
+                                    <i class="fas fa-map-marker-alt mr-2 text-orange-600"></i>
+                                    Remote
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-briefcase mr-2 text-orange-600"></i>
+                                    Full-time
+                                </span>
+                                <span class="flex items-center">
+                                    <i class="fas fa-clock mr-2 text-orange-600"></i>
+                                    4+ years experience
+                                </span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="mt-4 md:mt-0 btn-primary">
+                            Apply Now
+                        </a>
+                    </div>
+                    <p class="text-gray-600 mb-4">
+                        Work on both frontend and backend development using modern technology stack. Build end-to-end
+                        features and contribute to architectural decisions.
+                    </p>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2">Key Requirements:</h4>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-2 mb-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">4+ years full stack experience</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">.NET Core and React/Angular</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Database design and optimization</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">RESTful API development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Cloud platforms (Azure preferred)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-orange-600 mt-1 mr-2"></i>
+                                <span class="text-gray-600">Agile development practices</span>
+                            </li>
+                        </ul>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">.NET Core</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">React</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">SQL Server</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm rounded-full">Azure</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Process -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Application Process</h2>
+                <div class="section-divider"></div>
+                <p class="mt-4 text-lg text-gray-600">
+                    Simple and transparent hiring process
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        1
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Apply Online</h3>
+                    <p class="text-gray-600">
+                        Submit your application through our contact form with your resume and cover letter.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        2
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Initial Screening</h3>
+                    <p class="text-gray-600">
+                        Our HR team reviews your application and conducts an initial phone screening.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        3
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Technical Interview</h3>
+                    <p class="text-gray-600">
+                        Technical interviews with our engineering team to assess your skills and experience.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">
+                        4
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-gray-900">Offer & Onboarding</h3>
+                    <p class="text-gray-600">
+                        Receive your offer and begin a comprehensive onboarding process to set you up for success.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Join Our Team?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Take the next step in your career and apply for one of our open positions
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition inline-block">
+                    Apply Now
+                </a>
+                <a href="about.html" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition inline-block">
+                    Learn About Us
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-white font-bold text-xl mb-4">AIM Cloud Consulting</h3>
+                    <p class="text-sm">Expert software development, consulting, and outsourcing services powered by Microsoft technologies.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="about.html" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-white transition">Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition">Portfolio</a></li>
+                        <li><a href="careers.html" class="hover:text-white transition">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#development" class="hover:text-white transition">Software Development</a></li>
+                        <li><a href="services.html#consulting" class="hover:text-white transition">IT Consulting</a></li>
+                        <li><a href="services.html#outsourcing" class="hover:text-white transition">Outsourcing</a></li>
+                        <li><a href="services.html#support" class="hover:text-white transition">Support & Maintenance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2"></i>
+                            <a href="mailto:haitham.shaddad@aimcloudconsulting.com" class="hover:text-white transition text-sm">haitham.shaddad@aimcloudconsulting.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p>&copy; <span id="year">2024</span> AIM Cloud Consulting. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
